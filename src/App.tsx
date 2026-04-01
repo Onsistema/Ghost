@@ -67,14 +67,14 @@ export default function App() {
                 IA treinada para ROI de E-commerce
               </div>
               <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight text-[#0A2540] sm:text-6xl">
-                Pare de olhar para dados e comece a <span className="text-[#00FF9F] bg-[#0A2540] px-2 rounded-md">vender mais</span>.
+                Você gasta milhares em anúncios todo mês e <span className="text-[#00FF9F] bg-[#0A2540] px-2 rounded-md text-nowrap">não sabe onde</span> está perdendo dinheiro?
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 max-w-xl">
-                O InsightGhost conecta seu Google Analytics, Meta e TikTok Ads para entregar relatórios executivos toda segunda-feira. Insights reais em português, sem planilhas chatas.
+                Relatórios executivos automáticos toda segunda-feira com insights claros em português brasileiro. A IA analisa seu Google Analytics, Meta Ads e TikTok Ads e te diz exatamente o que fazer para aumentar vendas e cortar desperdício.
               </p>
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
                 <a href="#precos" className="group flex w-full items-center justify-center gap-2 rounded-full bg-[#0A2540] px-8 py-4 text-lg font-bold text-white transition-all hover:scale-105 hover:bg-[#153a5f] sm:w-auto shadow-xl shadow-blue-900/20">
-                  Começar grátis por 14 dias
+                  Começar grátis por 14 dias (sem cartão)
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
                 <button className="flex w-full items-center justify-center gap-2 rounded-full border-2 border-gray-200 px-8 py-4 text-lg font-semibold text-[#0A2540] transition-all hover:bg-gray-50 sm:w-auto">
@@ -140,8 +140,8 @@ export default function App() {
       <section className="bg-[#0A2540] py-24 text-white">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
-            Você está gastando fortunas em anúncios e <br className="hidden lg:block" />
-            <span className="text-[#00FF9F]">não sabe se está valendo a pena?</span>
+            Você está jogando dinheiro fora com <br className="hidden lg:block" />
+            <span className="text-[#00FF9F]">anúncios e nem percebe?</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-400">
             A maioria dos donos de negócio se perde em dashboards complexos ou planilhas infinitas. O resultado? Decisões lentas e dinheiro jogado no lixo.
@@ -200,11 +200,11 @@ export default function App() {
               
               <div className="mt-10 space-y-8">
                 {[
-                  { icon: Mail, title: "Relatórios Automáticos Semanais", desc: "PDFs bonitos e dashboards simples direto no seu e-mail." },
-                  { icon: Zap, title: "Insights em Linguagem Humana", desc: "Nada de termos técnicos. Explicamos o que está acontecendo de verdade." },
-                  { icon: BarChart3, title: "Recomendações Práticas", desc: "Dizemos exatamente onde aumentar ou diminuir o orçamento." },
-                  { icon: AlertTriangle, title: "Alertas de Desperdício", desc: "Detectamos campanhas 'queimando' dinheiro antes que seja tarde." },
-                  { icon: Clock, title: "Economia de 15h/mês", desc: "Liberte sua equipe da tarefa braçal de montar relatórios." }
+                  { icon: Mail, title: "Relatórios de Lucro Semanais", desc: "Receba o balanço real do seu investimento direto no e-mail, focado em ROI e não em métricas de vaidade." },
+                  { icon: Zap, title: "Insights que Viram Vendas", desc: "Nossa IA traduz dados complexos em ações simples que aumentam seu faturamento imediatamente." },
+                  { icon: BarChart3, title: "Otimização de Orçamento", desc: "Saiba exatamente onde injetar mais dinheiro para escalar e onde cortar para parar de perder." },
+                  { icon: AlertTriangle, title: "Radar de Prejuízo 24/7", desc: "Detectamos anomalias e campanhas que pararam de converter, salvando seu caixa em tempo real." },
+                  { icon: Clock, title: "Recupere seu Tempo e Lucro", desc: "Economize 15h por mês de trabalho braçal e foque na estratégia que traz dinheiro para o bolso." }
                 ].map((benefit, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm ring-1 ring-gray-200">
@@ -263,9 +263,9 @@ export default function App() {
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {[
-              { name: "Ricardo Silva", role: "Dono de E-commerce", text: "O InsightGhost me salvou de queimar R$ 2.000 em uma campanha de TikTok que parecia boa mas não convertia nada. O relatório de segunda é sagrado aqui." },
-              { name: "Mariana Costa", role: "Diretora de Agência", text: "Meus clientes amam os relatórios. São limpos, diretos e mostram que sabemos o que estamos fazendo. Economizamos horas de design e análise." },
-              { name: "Lucas Almeida", role: "Gestor de Tráfego", text: "A IA realmente entende de ROI. As recomendações de orçamento são muito precisas. É como ter um analista sênior 24h por dia." }
+              { name: "Carolina Mendes", role: "Dona da Bella Modas", text: "Meu ROAS subiu 47% em 45 dias seguindo as recomendações do InsightGhost. Finalmente entendi onde meu dinheiro estava indo." },
+              { name: "Rafael Torres", role: "Agência RT Marketing", text: "Economizo 12 horas por semana e meus clientes estão muito mais felizes com os relatórios. O nível de retenção da agência subiu drasticamente." },
+              { name: "Lucas Almeida", role: "Gestor de Tráfego", text: "A IA realmente entende de ROI. As recomendações de orçamento são muito precisas. É como ter um analista sênior 24h por dia focado em lucro." }
             ].map((testimonial, i) => (
               <div key={i} className="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-100 transition-all hover:-translate-y-1">
                 <div className="mb-4 flex text-[#00FF9F]">
